@@ -25,7 +25,7 @@ SECRET_KEY = '3ia09^34r3*_3zp(yp8%)@wua)2*q)eynsc)3jh9r0lang(l=n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['f1674bea.ngrok.io','127.0.0.1','http://vladimir.alwaysdata.net/']
+ALLOWED_HOSTS = ['f1674bea.ngrok.io','127.0.0.1','http://vladimir.alwaysdata.net/','https://manukyan1.pythonanywhere.com']
 
 
 # Application definition
