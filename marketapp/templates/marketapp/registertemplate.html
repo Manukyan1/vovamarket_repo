@@ -1,0 +1,64 @@
+{% extends "abs_base.html" %}
+{% block content %}
+<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="floating-labels.css" rel="stylesheet">
+
+  <body>
+
+<center>
+<h1>Registration:</h1>
+<div class = 'col-5 mt-5'>
+    <form class="form-signin">
+  <div class="text-center mb-4">
+
+  </div>
+<form class="" action="index.html" method="post">
+
+
+  <div class="form-label-group">
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputEmail">Email address</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <label for="inputPassword">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Repeat password" required>
+
+
+  </div>
+
+  <div class="checkbox mb-3">
+
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+  <p class="mt-5 mb-3 text-muted text-center">&copy;By Vladimir Manukyan 2019</p>
+</form>
+</div>
+</center>
+
+
+{% endblock %}
+
+{% block title %}
+  Registration to Vovamarket
+{% endblock %}

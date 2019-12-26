@@ -1,0 +1,17 @@
+{% extends 'abs_base.html' %}
+
+{% block title %}
+  {{ c_detail.title }} - Vovamarket
+{% endblock %}
+
+{% block content %}
+  <div class="mb-5 mt-4">
+    <center><h1>Ads in category "{{ c_detail.title|title }}":</h1></center>
+  </div>
+  {% for ad in c_detail.items_relname.all %}
+  <center>
+    {% include 'marketapp/includes/ad_card.html'  %}
+
+  {% endfor %}
+  </center>
+{% endblock %}

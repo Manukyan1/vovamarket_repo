@@ -1,0 +1,20 @@
+<div class="card text-center">
+  <div class="card-header">
+    {{  ad.date_pub  }}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ ad.item_name }}</h5>
+
+    <h6>{{ ad.item_price }} Դ</h6>
+    <p class="card-text">{{ ad.body }}</p>
+    <a href="{% url 'item_detail_urls' slug=ad.slug %}" class="btn btn-primary">Details</a>
+  </div>
+
+  <div class="card-footer text-muted">
+    Categories:
+    {% for categ in ad.tags.all %}
+      <a href="{{ tag.get_absolute_url }}">{{ tag.title }}</a>
+    {% endfor %}
+  </div>
+
+</div>

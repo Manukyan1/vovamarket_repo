@@ -1,0 +1,64 @@
+{% extends "abs_base.html" %}
+
+{% block content %}
+
+<style>
+  .gradienta{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .gradientb{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .gradientc{
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  }
+</style>
+
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active gradienta">
+      <center><h2 class = 'display-4'>Give your ads easier</h2></center>
+
+    </div>
+    <div class="carousel-item gradientb">
+      <center><h2 class = 'display-4'>All inclusive for free</h2></center>
+
+    </div>
+    <div class="carousel-item gradientc">
+      <center><h2 class = 'display-4'>Vovamarket</h2></center>
+
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to Vovamarket!!!</h1>
+  <p class="lead">The Vovamarket is a adverstiment publishing web site. Here you can give your own adverstiment for free.</p>
+
+  <a class="btn btn-primary" href="{% url 'items_page' %}" role="button">Go to ads page</a>
+  <a class="btn btn-outline-success" href="{% url 'reg_page' %}" role="button">Sign up</a>
+  <a class="btn btn-outline-dark" href="" role="button">Login</a>
+</div>
+{% endblock %}
+{% block title %}
+  Vova market - Home
+{% endblock %}

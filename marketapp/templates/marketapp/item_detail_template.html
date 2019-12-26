@@ -1,0 +1,15 @@
+{% extends 'abs_base.html' %}
+{% block title %}
+  {{ ad_detail.item_name }} - Vova market
+{% endblock %}
+
+{% block content %}
+  <center>
+    <div class="jumbotron">
+      <h1 class="display-4">{{ ad_detail.item_name }}</h1>
+      <h4>{{ ad_detail.body }}</h4>
+    <h3>{{ ad_detail.item_price }}Դ</h3>
+
+    </div>
+</center>
+{% endblock %}
